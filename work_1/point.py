@@ -2,7 +2,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from math import log10
-img=cv2.imread("D:\\think.jpg",0)
+img=cv2.imread('work_1/think.jpg',0)
 plt.rcParams['font.sans-serif']=['SimHei']
 plt.rcParams['axes.unicode_minus']=False
 
@@ -52,7 +52,7 @@ def PL(img,x1,x2,y1,y2):
 
 plt.figure(num="结果")
 titles=["原图",'a=-1,b=0','b=150,a=1','r=0.5','log',"分段线性"]
-img=cv2.imread("D:/think.jpg",cv2.IMREAD_GRAYSCALE)
+img=cv2.imread('work_1/think.jpg',cv2.IMREAD_GRAYSCALE)
 img_x1=100
 img_x2=160
 img_y1=30

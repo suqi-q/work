@@ -6,11 +6,11 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif']=['SimHei']
 plt.rcParams['axes.unicode_minus']=False
 
-img=Image.open("D:\\R-C.jpg")
+img=Image.open("work_2\R-C.jpg")
 img1=img.rotate(-30)
 img2=img.transpose(Image.Transpose.FLIP_TOP_BOTTOM)
 
-pic=cv2.imread("D:\\R-C.jpg")
+pic=cv2.imread("work_2\R-C.jpg")
 image=cv2.cvtColor(pic,cv2.COLOR_BGR2RGB)
 
 M = np.float32([[1,0,0],[0,1,100]])

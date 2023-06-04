@@ -54,12 +54,12 @@ def deHaze(m, r=81, eps=0.001, w=0.95, maxV1=0.80, bGamma=False):
 
 
 if __name__ == '__main__':
-    m1 = deHaze(cv2.imread("D:\\OIP-C (1).jpg") / 255.0) * 255
-    m2 = deHaze(cv2.imread("D:\\tuxiang.png")/ 255.0) * 255
+    m1 = deHaze(cv2.imread("work_3/tuxiang.png") / 255.0) * 255
+    m2 = deHaze(cv2.imread("work_3/tuxiang1.jpg")/ 255.0) * 255
 
 
-img1 =cv2.imread("D:\\OIP-C (1).jpg",flags=1)
-img2 =cv2.imread("D:\\tuxiang.png",flags=1)
+img1 =cv2.imread("work_3/tuxiang.png",flags=1)
+img2 =cv2.imread("work_3/tuxiang1.jpg",flags=1)
 m1 = m1.astype(np.uint8)
 m2 = m2.astype(np.uint8)
 img1 = cv2.cvtColor(img1,cv2.COLOR_BGR2RGB)
